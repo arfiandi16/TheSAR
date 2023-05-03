@@ -28,8 +28,8 @@ body{
 }
 
 img {
-    -webkit-animation: zoom 25s; /* Chrome, Safari, Opera */
-    animation: zoom 25s;
+/*    -webkit-animation: zoom 25s;  Chrome, Safari, Opera 
+    animation: zoom 25s;*/
 }
 *,:after,:before{box-sizing:border-box}
 .clearfix:after,.clearfix:before{content:'';display:table}
