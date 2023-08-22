@@ -159,7 +159,8 @@ class HomePageController extends Controller
     public function uploadRating(Request $request)
     {
         $rtCheck = Rating::all()->where(['id_user',$request->id_user],['id_home',$request->id_home])->first(); 
-        if($rtCheck['id_user']!=$request->id_user && $rtCheck['id_home']!=$request->id_home){  
+        //dd($rtCheck);
+        if($rtCheck==null){  
             // dd($rtCheck);
             Rating::create(["jumlah"=>$request->rating,
                             "id_home"=>$request->id_home,
